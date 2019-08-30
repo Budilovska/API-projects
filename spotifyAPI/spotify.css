@@ -1,0 +1,56 @@
+img {
+    width: 200px;
+    height: 200px;
+    grid-column: 1/2;
+}
+
+body {
+    background-color: #e1e8f0;
+    margin: 0;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.artist-or-album {
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    font-size: 24px;
+
+}
+
+.input {
+    width: 300px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    margin-top: 50px;
+}
+
+.submit-btn {
+    height: 53px;
+    width: 200px;
+    border: none;
+    background-color: #e62739;
+    color: white;
+    font-size: 24px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+.more-btn {
+    height: 30px;
+    width: 150px;
+    visibility: hidden;
+}
+
+.visibility {
+    visibility: visible;
+}

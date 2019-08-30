@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    margin: 0;
+}
+
+.menu {
+    grid-column: 1/2;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-left: 10px;
+    margin-top: 20px;
+    border: none;
+    height: 3rem;
+}
+
+input::placeholder {
+  color: #1A2351;
+  font-size: 35px;
+  font-family: 'Mukta', sans-serif;
+}
+
+.submit-button {
+ margin-left: 8px;
+ width: 250px;
+ border: none;
+ border-radius: 10px;
+ font-size: 35px;
+ color: #1A2351;
+ font-family: 'Mukta', sans-serif;
+ text-decoration: none;
+ cursor: pointer;
+ text-align: left;
+ margin-top: 10px;
+}
+
+#logo {
+    position: absolute;
+    height: 180px;
+    right: 50px;
+    bottom: 50px;
+}
+
+.repos-container {
+    grid-column: 2/3;
+    background-color: #EB5733;
+    position: relative;
+}
+
+.repos-element {
+    margin-left: 70px;
+    margin-top: 30px;
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+}
+
+.repos-name {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.repos-images {
+    margin-right: 30px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+                <link rel="stylesheet" href="githubAPI.css">
+                <!-- <link rel=“shortcut icon” href=“#”> -->
+                <link href="https://fonts.googleapis.com/css?family=Mukta:700&display=swap" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+
+<div class="menu">
+<input name="username" placeholder="username" type="text">
+<input name="password" placeholder="password" type="password">
+<input name="user-to-search" placeholder="github user to search" type="text">
+<button class="submit-button">submit</button>
+</div>
+
+
+<!-- this is where the repos will show once i get response from github -->
+<div class="repos-container">
+<img id="logo" src="github-logo.png">
+</div>
+
+<!-- handlebards templates are here -->
+<!-- template 1 -->
+<script id="reposTemplate" type="text/x-handlebars-template">
+    {{#repos}}
+        <div class="repos-element">
+        <img class="repos-images" src="{{ owner.avatar_url }}">
+        <div class="repos-name">{{ full_name }}</div>
+        </div>
+    {{/repos}}
+</script>
+
+<script id="commitsTemplate" type="text/x-handlebars-template">
+    {{#commits}}
+    <ul class="list-of-commits"><li>{{ commit.message }}</li></ul>
+    {{/commits}}
+</script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="githubAPI.js" charset="utf-8"></script>
+    </body>
+</html>

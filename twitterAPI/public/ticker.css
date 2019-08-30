@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+#ticker {
+    position: relative;
+    overflow: hidden;
+    border: 2px pink solid;
+    height: 1.25em;
+    font-size: 22px;
+}
+
+#headlines {
+    position: absolute;
+    left: 50%;
+    white-space: nowrap;
+}
+
+#headlines a {
+    padding-right: 50px;
+}
